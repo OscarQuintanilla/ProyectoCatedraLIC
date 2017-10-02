@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>eWallet</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	
+</head>
+<body>
+<header>
+	<section id="formularioIniciarSesion">
+		<form name="IniciarSesion">
+			<input type="text" name="Usuario" placeholder="Nombre de usuario" class="datosUsuario" id="txtUsuario">
+			<input type="text" name="Contrasena" placeholder="Contraseña" class="datosUsuario" id="txtLlave">
+			<input type="button" 	class="datosUsuario" 	id="btnIniciarSesion"	value="Iniciar Sesión">
+			<p id="btnRecuperarClave">Recuperar contraseña</p>
+		</form>
+	</section>	
+</header>
+<section id="pantallaDeInicioSesion">
+	<section id="formularioRegistrar">
+		<form name="Registrar">
+			<input type="text" class="entradaDatos"	id="txtNombre" 		name="Nombres"	 placeholder="Nombres" value=""><br>
+			<input type="text" class="entradaDatos"	id="txtApellido" 	name="Apellidos" placeholder="Apellidos"><br>
+			<input type="text" class="entradaDatos"	id="txtCorreo"		name="Email"	 placeholder="Correo Electrónico"><br>
+			<input type="text" class="entradaDatos"	id="txtContrasena" 	name="Contra"	 placeholder="Contraseña"><br>
+			<input type="text" class="entradaDatos"	id="txtDUI" 		name="DUI"	 	 placeholder="DUI"><br>
+			<input type="text" class="entradaDatos"	id="txtNIT" 		name="NIT"	 	 placeholder="NIT"><br>
+			<input type="text" class="entradaDatos"	id="txtCelular" 	name="Celular"	 placeholder="Número de Celular"><br>
+			<input type="date" class="entradaDatos"	id="txtfecha" 		name="Fecha"	 placeholder=""><br>
+			<label>Dirección</label><br>
+			<input type="text" class="entradaDatos" id="txtDepartamento" 	name="direccion" placeholder="Departamento"><br>		
+			<input type="text" class="entradaDatos" id="txtMunicipio" 		name="direccion" placeholder="Municipio"><br>
+			<input type="text" class="entradaDatos" id="txtColonia" 		name="direccion" placeholder="Colonia"><br>
+			<input type="text" class="entradaDatos" id="txtCalle"	 		name="direccion" placeholder="Calle o  Pasaje"><br>
+			<input type="text" class="entradaDatos" id="txtCasa" 			name="direccion" placeholder="Número de Casa"><br>
+			<label>Pregunta de seguridad</label><br>
+			<select id="pregunta">
+				<option>Pregunta 1</option>
+				<option>Pregunta 2</option>
+				<option>Pregunta 3</option>
+				<option>Pregunta 4</option>
+				<option>Pregunta 5</option>
+			</select><br>
+			<input type="text" 		class="entradaDatos" 	id="txtRespuesta" 	name="respuesta" 	placeholder="Respuesta">
+			<input type="button" 	class="entradaDatos" 	id="btnRegistrar"	name="btnRegistrar" value="Registrar">
+			<input type="button" 	class="entradaDatos" 	id="btnRellenar"	name="btnRellenar" value="Rellenar">
+			<input type="button" 	class="entradaDatos" 	id="btnMostrar"	name="btnRellenar" value="Mostrar Usuarios">
+		</form>
+	</section>
+</section>
+<section id="pantallaPrincipal">
+	<article id="pntEfectivo">
+		<h1>Datos bancarios</h1>
+		<input type="text" id="txtEfectivo" name="datos" placeholder="Efectivo"><br>		
+		<input type="button" id="btnGEfectivo" name="guradarEfectivo" value="Guardar">		
+	</article>
+	<article id="pntCuentas">
+		<h1>Datos Cuentas</h1>
+		<input type="text" id="txtBanco" name="datos" placeholder="Banco"><br>
+		<input type="text" id="txtNumCuenta" name="datos" placeholder="Número de Cuenta"><br>
+		<input type="text"  id="txtSaldo" name="datos" placeholder="Saldo Actual"><br>
+		<input type="button" id="btnAgregarCuenta" name="guardarBanco" value="Agregar otra cuenta">
+		<input type="button" id="btnTerminar" name="guardarBanco" value="Terminar">
+	</article>
+	<article id="pntMenu">
+		<ul>
+			<li class="opcionMenu"><a href="">Cuentas</a></li>
+			<li class="opcionMenu"><a href="">Ingresos</a></li>
+			<li class="opcionMenu"><a href="">Gastos</a></li>
+			<li class="opcionMenu"><a href="">Configuraciones Generales</a></li>
+			<li class="opcionMenu"><a href="">Estadísticas</a></li>
+		</ul>
+	</article>
+</section>
+<section id="pantallaRecuperarClave">
+	<article id="preguntasClave">
+		<p id="txtPregunta"></p>
+	</article>
+	
+</section>
+<script type="text/javascript" src="js/guardarDatos.js"></script>
+<script type="text/javascript" src="js/iniciarSesion.js"></script>
+</body>
+</html>

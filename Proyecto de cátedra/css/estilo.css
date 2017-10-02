@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+body{
+	background-color: rgb(249,250,252);
+	background-size: 100%;
+}
+header{
+	background-color: rgba(005,22,32,1);
+	text-align: right;
+	float: left;
+	width: 100%;
+
+}
+ul{
+	list-style: none;
+}
+form > p{
+	margin: 1.5% 1% -1% 0%;
+	color: #FFF;
+	cursor: pointer;
+}
+section{
+	box-sizing: border-box;
+}
+/* ...   Id  ... */
+#formularioIniciarSesion{
+	box-sizing: border-box;
+	float: right;
+	margin-left: 20%;
+	padding: 1.75%;
+	width: 40%;
+}
+#formularioRegistrar{
+	float: right;
+	padding: 1% 5%;
+	margin-right: 1%;
+	width: 40%;
+}
+.entradaDatos{
+	padding: 1.5%;
+	box-sizing: border-box;
+	border-radius: 3px;
+	border-style: none;
+	margin: 1%;
+	width: 100%;
+}
+#pantallaPrincipal{
+	border: solid;
+	width: 100%;
+}
+#pntEfectivo, #pntCuentas{
+	display: none;
+}
+/* ... Class ... */
+.opcionMenu{
+	float: right;
+	box-sizing: border-box;
+	border: solid;
+	padding: 2%;
+	text-align: center;
+	width: 20%;
+}
+
+/*..................Fuentes..................*/
+
+@font-face{
+	font-family: "";
+	src: url(../media/font.ttf);
+}
+
