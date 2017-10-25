@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: rgb(249, 250, 252);
+    background-size: 100%;
+}
+
+header {
+    background-color: rgba(005, 22, 32, 1);
+    text-align: right;
+    float: left;
+    width: 100%;
+}
+
+nav {
+    padding: 1% 0% 2% 2%;
+    float: left;
+    color: #FFF;
+    width: 55%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav > ul > li {
+    font-size: 125%;
+    float: left;
+    margin: 2% 2%;
+}
+
+nav > ul > li:first-child {
+    font-family: "Mayan";
+    font-size: 300%;
+    margin: 0% 2% 0% 0%;
+}
+
+nav > ul {
+    list-style: none;
+}
+
+/* Pantallas  */
+
+section {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+}
+
+#artEfectivo {
+    text-align: center;
+    margin: 5% auto;
+    width: 60%;
+}
+.tbl{
+    border-style: solid;
+    width: 100%;
+}
+.lstOpc{
+    cursor: pointer;
+}
+#artCuentas{
+    text-align: center;
+    margin: 5% auto;
+    width: 60%;
+}
+#artCuentas > input{
+    padding: 1% 4%;
+    margin: 1%;
+}
+#artTarjetas{
+    text-align: center;
+    margin: 5% auto;
+    width: 60%;
+}
+#artTarjetas > input{
+    padding: 1% 4%;
+    margin: 1%;
+}
+#artIngresos{
+    text-align: center;
+    margin: 5% auto;
+    width: 60%;
+}
+#artIngresos > input{
+    padding: 1% 4%;
+    margin: 1%;
+}
+
+/* Fuentes */
+
+@font-face {
+    font-family: "Mayan";
+    src: url(../media/Mayan.ttf);
+}

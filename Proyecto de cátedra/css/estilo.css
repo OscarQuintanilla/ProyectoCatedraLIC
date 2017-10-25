@@ -1,76 +1,187 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
-a{
-	text-decoration: none;
-	color: inherit;
-}
-body{
-	background-color: rgb(249,250,252);
-	background-size: 100%;
-}
-header{
-	background-color: rgba(005,22,32,1);
-	text-align: right;
-	float: left;
-	width: 100%;
 
+a {
+    text-decoration: none;
+    color: inherit;
 }
-ul{
-	list-style: none;
+
+body {
+    background-color: rgb(249, 250, 252);
+    background-size: 100%;
 }
-form > p{
-	margin: 1.5% 1% -1% 0%;
-	color: #FFF;
-	cursor: pointer;
+
+header {
+    background-color: rgba(005, 22, 32, 1);
+    text-align: right;
+    float: left;
+    width: 100%;
 }
-section{
-	box-sizing: border-box;
+
+nav {
+    padding: 1% 0% 2% 2%;
+    float: left;
+    color: #FFF;
+    width: 55%;
 }
+
+nav ul {
+    list-style: none;
+}
+
+nav > ul > li {
+    font-size: 125%;
+    float: left;
+    margin: 2% 2%;
+}
+
+nav > ul > li:first-child {
+    font-family: "Mayan";
+    font-size: 300%;
+    margin: 0% 2% 0% 0%;
+}
+
+nav > ul {
+    list-style: none;
+}
+
+form > p {
+    margin: 1.5% 1% -1% 0%;
+    color: #FFF;
+    cursor: pointer;
+}
+
+section {
+    box-sizing: border-box;
+}
+
 /* ...   Id  ... */
-#formularioIniciarSesion{
-	box-sizing: border-box;
-	float: right;
-	margin-left: 20%;
-	padding: 1.75%;
-	width: 40%;
+
+#formularioIniciarSesion {
+    box-sizing: border-box;
+    float: right;
+    margin-left: 0px;
+    padding: 2% 1.75% 0% 0%;
+    width: 40%;
 }
-#formularioRegistrar{
-	float: right;
-	padding: 1% 5%;
-	margin-right: 1%;
-	width: 40%;
+
+#formularioRegistrar {
+    float: right;
+    padding: 1% 5%;
+    margin-right: 1%;
+    width: 40%;
 }
-.entradaDatos{
-	padding: 1.5%;
-	box-sizing: border-box;
-	border-radius: 3px;
-	border-style: none;
-	margin: 1%;
-	width: 100%;
+
+.entradaDatos {
+    padding: 1.5%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-style: none;
+    margin: 1%;
+    width: 100%;
 }
-#pantallaPrincipal{
-	border: solid;
-	width: 100%;
+
+#pantallaPrincipal {
+    border: solid;
+    width: 100%;
 }
-#pntEfectivo, #pntCuentas{
-	display: none;
+
+#pntBanner {
+    float: left;
+    padding: 2%;
+    box-sizing: border-box;
+    width: 55%;
+    text-align: center;
 }
+
+#imgBanner {
+    margin: auto;
+    width: 75%;
+}
+
+#pntPrimerInicio {}
+
 /* ... Class ... */
-.opcionMenu{
-	float: right;
-	box-sizing: border-box;
-	border: solid;
-	padding: 2%;
-	text-align: center;
-	width: 20%;
+
+.opcionMenu {
+    float: right;
+    box-sizing: border-box;
+    border: solid;
+    padding: 2%;
+    text-align: center;
+    width: 20%;
+}
+
+.datosUsuario {
+    padding: 1%;
+}
+
+/*.............Datos de la cuenta............*/
+
+#pntEfectivo,
+#pntCuentas,
+#pntMenu {
+    display: none;
+}
+
+pntPrimerInicio {
+    display: none;
+    border: solid;
+    padding: 15%;
+}
+
+#pntEfectivo {
+    display: none;    
+    box-sizing: border-box;
+    float: left;
+    padding-top: 10%;
+    padding-left: 45%;
+    margin: auto;
+    width: 100%;
+}
+
+#pntEfectivo > input {
+    padding: 1%;
+    margin: 1%;
+}
+
+#pntCuentas {
+    box-sizing: border-box;
+    float: left;
+    padding-top: 10%;
+    padding-left: 45%;
+    margin: auto;
+    width: 100%;
+}
+
+#pntCuentas > input {
+    padding: 1%;
+    margin: 1%;
+}
+#pntIngresos {
+    box-sizing: border-box;
+    float: left;
+    padding-top: 10%;
+    padding-left: 45%;
+    margin: auto;
+    width: 100%;
+}
+
+#pntIngresos > input {
+    padding: 1%;
+    margin: 1%;
 }
 
 /*..................Fuentes..................*/
 
-@font-face{
-	font-family: "";
-	src: url(../media/font.ttf);
+@font-face {
+    font-family: "";
+    src: url(../media/font.ttf);
 }
 
+@font-face {
+    font-family: "Mayan";
+    src: url(../media/Mayan.ttf);
+}

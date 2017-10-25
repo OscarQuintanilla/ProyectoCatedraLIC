@@ -16,10 +16,8 @@ var UsuarioRegistrado = function(){
 	this.pregunta;
 	this.respuesta;
 }
-var cuentasUsuario = function(){
-	this.nombreDueno;
-	this.apellidoDueno;
-	this.efectivo;
+var cuentaBanco = function(){
+	this.numeroDueno;
 	this.banco;
 	this.numeroCuenta;
 	this.saldoActual;

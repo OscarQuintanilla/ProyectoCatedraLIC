@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>eWallet</title>
+    <link rel="stylesheet" type="text/css" href="../css/pantallaPrincipal.css">
+    <script type="text/javascript" src="../js/pantallaPrincipal.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="lstMenu">
+                <li>eWallet</li>
+                <li class="lstOpc" id="oCuentas">Cuentas</li>
+                <li class="lstOpc" id="oIngresos">Ingresos</li>
+                <li class="lstOpc" id="oGastos">Gastos</li>
+                <li class="lstOpc" id="oConfig">Configuración</li>
+                <li class="lstOpc" id="oEstad">Estadísticas</li>
+            </ul>
+        </nav>
+        <section id="formularioIniciarSesion">
+
+        </section>
+    </header>
+    <section id="pntCuentas">
+        <article id="artEfectivo">
+            <h2>Efectivo disponible:</h2>
+        </article>
+        <article id="artCuentas">
+            <h3>Agregar Cuenta Bancaria</h3>
+            <input type="text" id="txtBanco" placeholder="Banco" autofocus>
+            <input type="text" id="txtNumCuenta" placeholder="Número de Cuenta">
+            <input type="text" id="txtSaldoActual" placeholder="Saldo Actual">
+            <br>
+            <input type="button" id="btnAgregarCuenta" value="Guardar Cuenta">
+            <table class="tbl" id="tblCuentas">
+                <tr>
+                    <th>Banco</th>
+                    <th>Número de Cuenta</th>
+                    <th>Saldo Actual</th>
+                </tr>
+            </table>
+
+        </article>
+        <article id="artTarjetas">
+            <h3>Agregar Tarjeta</h3>
+            <input type="text" id="txtTarBanco" placeholder="Banco" autofocus>
+            <input type="text" id="txtTarNumCuenta" placeholder="Número de Tarjeta">
+            <input type="text" id="txtTarSaldoActual" placeholder="Saldo Actual">
+            <input type="text" id="txtTarInteres" placeholder="% Interés">
+            <input type="date" id="txtTarVencimiento" placeholder="Vencimiento">
+
+            <br>
+            <input type="button" id="btnAgregarTarjeta" value="Guardar Tarjeta">
+            <table class="tbl" id="tblTarjetas">
+                <tr>
+                    <th>Banco</th>
+                    <th>Número de Tajerta</th>
+                    <th>Saldo Actual</th>
+                    <th>% de interés</th>
+                    <th>Vencimiento</th>
+                </tr>
+            </table>
+
+        </article>
+
+    </section>
+    <section id="pntIngresos">
+        <article id="artIngresos">
+            <h3>Ingresos</h3>
+            <input type="date" id="txtIngresoFecha" placeholder="Fecha" autofocus>
+            <input type="text" id="txtMotivo" placeholder="Motivo">
+            <input type="text" id="txtMonto" placeholder="Monto">
+            <select id="opcMetodo">
+                <option value="Efectivo">Efectivo</option>
+            </select>
+            <br>
+            <input type="button" id="btnIngreso" value="Guardar Ingreso">
+            <table class="tbl" id="tblIngresos">
+                <tr>
+                    <th>Fecha</th>
+                    <th>Motivo</th>
+                    <th>Monto</th>
+                    <th>Método</th>
+                </tr>
+            </table>
+
+        </article>
+    </section>
+    <section id="pntGastos">
+        <article id="artIngresos">
+            <h3>Gastos</h3>
+            <input type="date" id="txtIngresoFecha" placeholder="Fecha" autofocus>
+            <input type="text" id="txtMotivo" placeholder="Motivo">
+            <input type="text" id="txtMonto" placeholder="Monto">
+            <select id="opcMetodo">
+                <option value="Efectivo">Efectivo</option>
+            </select>
+            <br>
+            <input type="button" id="btnIngreso" value="Guardar Ingreso">
+            <table class="tbl" id="tblIngresos">
+                <tr>
+                    <th>Fecha</th>
+                    <th>Motivo</th>
+                    <th>Monto</th>
+                    <th>Método</th>
+                </tr>
+            </table>
+
+        </article>
+    </section>
+    <section id="pntConfiguracion">
+
+    </section>
+    <section id="pntEstadisticas">
+
+    </section>
+
+</body>
+
+</html>
